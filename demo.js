@@ -51,14 +51,31 @@
 // console.log(10!=11);
 // console.log(10!=="10");
 
-function fun1(){
-    let a=parseInt(document.getElementsByClassName('demo').value)
-    console.log(typeof a);
+// function fun1(){
+//     let a=parseInt(document.getElementsByClassName('demo').value)
+//     console.log(typeof a);
 
-    console.log('welcome');
+//     console.log('welcome');
     
-}
+// }
 
+// for(let i=0;i<=10;i++){
+//     console.log(i);
+    
+// }
 
+// let i=0
+// while(i<=10){                                                     
+//     console.log(i);
+//     i++
+    
 
+// }
 
+// let i=0
+// do{
+//     console.log(i);                          
+//     i++
+    
+// }
+// while(i<=10)
