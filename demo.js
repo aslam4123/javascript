@@ -2,6 +2,8 @@
 // var a=20
 // alert(a)
 
+// const { log } = require("console")
+
 
 // a=10
 // a=30
@@ -79,3 +81,61 @@
     
 // }
 // while(i<=10)
+
+// let l=[1,2,3,4,5]
+// let l={name:'aslam',age:21}
+// for (i in l){
+//     console.log(i);
+// }
+
+// for (i of l){
+//     console.log(i);
+// }
+
+// let a='     welcome     '
+// console.log(a.length);
+// console.log(a.charAt(5));
+// console.log(a.concat(' ','helo'));
+// console.log(a.endsWith('e'));
+// console.log(a.startsWith('w'));
+// console.log(a.slice(0,4));
+// console.log(a.trim());
+// console.log(a.trimStart());
+// console.log(a.trimEnd());
+
+// l=[1,2,3,4,5,6]
+
+// l.pop()
+// console.log(l);
+// console.log(l.length);
+// console.log(l.at(3));
+// // l.push(7,8)
+// l.shift()
+// l.unshift()
+
+// l[2]=100
+// console.log(l);
+
+
+function sample(){
+    console.log('sample');
+    
+}
+sample()
+
+
+
+
+let sample1=function(){
+    console.log('sample1');
+}
+sample1()
+
+
+let sample2=()=>console.log('sample2');
+sample2()
+            //   or
+let sample3=()=>{
+    console.log('sample3');
+}
+            sample3()

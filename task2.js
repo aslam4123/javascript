@@ -106,13 +106,13 @@
 //     }
 // }
 
-function reverse(){
-    let a=parseInt(document.getElementById('a').value)
-    rev=0
-    while (a>0){
-        d=a%10                              
-        rev=rev*10+d
-        a=10
-        console.log(rev)
-    }
-}
+// function reverse(){
+//     let a=parseInt(document.getElementById('a').value)
+//     rev=0
+//     while (a>0){
+//         d=a%10                              
+//         rev=rev*10+d
+//         a=10
+//         console.log(rev)
+//     }
+// }
