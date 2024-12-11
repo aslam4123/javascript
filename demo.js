@@ -117,25 +117,27 @@
 // console.log(l);
 
 
-function sample(){
-    console.log('sample');
+// function sample(){
+//     console.log('sample');
     
-}
-sample()
+// }
+// sample()
 
 
 
 
-let sample1=function(){
-    console.log('sample1');
-}
-sample1()
+// let sample1=function(){
+//     console.log('sample1');
+// }
+// sample1()
 
 
-let sample2=()=>console.log('sample2');
-sample2()
-            //   or
-let sample3=()=>{
-    console.log('sample3');
-}
-            sample3()
+// let sample2=()=>console.log('sample2');
+// sample2()
+//             //   or
+// let sample3=()=>{
+//     console.log('sample3');
+// }
+//             sample3()
+
+
