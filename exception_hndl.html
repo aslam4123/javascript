@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="timer"></h1>
+    <script>
+        // try{
+        //     console.log(a);
+            
+        // }
+        // catch(error){
+        //     console.log('error',error.message);
+            
+        // }
+        // finally{
+        //     console.log('prgm ends');
+            
+        // }
+
+        // console.log('start');
+        // for(i=0;i<=1000;i++){
+        //     console.log(i);
+            
+        // }
+        
+        // console.log('start');
+        // setTimeout(()=>{
+        //     console.log('timer');
+            
+
+        // },2000)
+        // console.log('end');
+
+        // let count=0
+        // let data=setInterval(()=>{
+
+        //     document.getElementById('timer').innerHTML=count
+        //     count++
+        //     if(count<0){
+        //         clearInterval(data)
+        //     }
+        // },1000)
+
+        let minutes=2;
+        let second=59;
+
+        let data=setInterval(()=>{
+            document.getElementById('timer').innerHTML=seconds
+            seconds--
+            if(seconds === 60){
+                  seconds = 0;
+                  minutes--;
+                  
+        }
+    },1000)
+        
+        
+    </script>
+    
+</body>
+</html>
