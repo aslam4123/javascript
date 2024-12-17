@@ -7,6 +7,8 @@
 </head>
 <body>
     <h1 id="timer"></h1>
+    <div id="img">
+    <img src="/images/curosill2.webp" width="300px" height="300px" id="img1"></div>
     <script>
         // try{
         //     console.log(a);
@@ -45,15 +47,39 @@
         //     }
         // },1000)
 
-        let minutes=2;
-        let second=59;
+    //     let min=2;
+    //     let sec=59;
+
+    //     let data=setInterval(()=>{
+    //         document.getElementById('timer').innerHTML=min+':'+sec
+    //         sec--
+    //         if(sec<0){
+    //               min--
+    //               sec=59
+    //               if (min<0){
+    //                 clearInterval(data)
+    //                 alert('completed')
+    //               }
+                  
+    //     }
+    // },1000)
+
+    let min=1;
+        let sec=59;
 
         let data=setInterval(()=>{
-            document.getElementById('timer').innerHTML=seconds
-            seconds--
-            if(seconds === 60){
-                  seconds = 0;
-                  minutes--;
+            document.getElementById('timer').innerHTML=min+':'+sec
+            sec--
+            if(sec<0){
+                  min--
+                  sec=59
+                  if (min<0){
+
+                    clearInterval(data)
+                    alert('completed')
+                    document.getElementById('img1').style.display='none'
+                  }
+                 
                   
         }
     },1000)
