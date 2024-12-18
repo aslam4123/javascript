@@ -4,8 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        li{
+            color: red;
+        }
+    </style>
 </head>
 <body>
+
+    <!-- number validation -->
+
     <!-- <form id="form">
         <input type="text" placeholder="name" required>
         <input type="tel" name="" placeholder="mobile number" id="no" required>
@@ -28,7 +36,9 @@
         })
     </script> -->
 
-    <form id="form">
+   <!-- password validation -->
+
+    <!-- <form id="form">
         <input type="text" placeholder="name" required>
         <input type="password" name="" placeholder="password" id="no" required>
         <h3 id="h3"></h3>
@@ -39,7 +49,7 @@
             event.preventDefault()
             let no = document.getElementById('no').value
             let h3=document.getElementById('h3')
-            if(/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/.test(no)){
+            if(/^[A-Za-z\d@$!%*?&]{8,}$/.test(no)){
                 h3.innerHTML='Valid'
                 h3.style.color='green'
             }
@@ -48,6 +58,41 @@
                 h3.style.color='red'
             }
         })
-    </script>
+    </script> -->
+
+    <!-- other method of password validation -->
+
+    <!-- <form>
+        <input type="text" placeholder="name" required>
+        <input type="password" name="" placeholder="password" id="pswd" required>
+        <ul>
+            <li id="len">length min 8 chr</li>
+            <li id="cap">min 1 cap letter</li>
+            <li id="sml">min 1 sml letter</li>
+            <li id="spl">min 1 spl chr</li>
+            <li id="no">min 1 no</li>
+        </ul>
+        <input type="submit" value="Add">
+    </form>
+
+    <script>
+        let pswd=document.getElementById("pswd")
+        let len = document.getElementById("len")
+        let cap = document.getElementById("cap")
+        let sml = document.getElementById("sml")
+        let no = document.getElementById("no")
+        let spl = document.getElementById("spl")
+
+        pswd.addEventListener('input',function(){
+            let password=pswd.value
+            len.style.color=password.length>=8 ? 'green' : 'red'
+            cap.style.color=/[A-Z]/.test(password) ? 'green' : 'red'
+            sml.style.color=/[a-z]/.test(password) ? 'green' : 'red'
+            no.style.color=/\d/.test(password) ? 'green' : 'red'
+            spl.style.color=/[@#$%&*]/.test(password) ? 'green' : 'red'
+        })
+    </script> -->
+
+
 </body>
 </html>
